@@ -1,0 +1,31 @@
+let person = {
+    fName : "Anthony",
+    age : 29,
+    enrolled : true,
+    courses : ["CPAN1","CPAN2","CPAN3","CPAN4","CPAN5","WRIT1"],
+    info : function(){
+        console.log(this);
+    }
+}
+
+console.log(person.fName);
+console.log(person.age);
+
+person.info();
+
+const jsonString = JSON.stringify(person);
+console.log(jsonString);
+const newPerson = JSON.parse(jsonString);
+console.log(newPerson);//Stringify stole it's function, JSON is not used to handle logic
+
+let { fName , courses } = person;
+
+console.log(fName);
+console.log(courses);
+
+let grades = [100,86,90,60,72,81]
+
+let [ a, b ]  = grades
+console.log(a);
+console.log(b);
+
