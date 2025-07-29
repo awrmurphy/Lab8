@@ -36,3 +36,13 @@ console.log(student);
 student.graduationYear = 2026;
 console.log(student.graduationYear);
 
+// student.sGrades = grades;
+// for (let i = 0; i<student.courses.length;){
+//     student.courses[i] = student.courses[i]+" : "+student.sGrades[i]
+//     i++;
+// }
+// console.log(student.courses);
+
+
+let coursesArr = [...student.courses];
+console.log(coursesArr);
