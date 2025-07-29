@@ -29,3 +29,5 @@ let [ a, b ]  = grades
 console.log(a);
 console.log(b);
 
+let student = {...person}
+console.log(student);
