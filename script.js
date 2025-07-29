@@ -42,7 +42,7 @@ console.log(student);
 student.graduationYear = 2026;
 console.log(student.graduationYear);
 
-// student.sGrades = grades;
+student.sGrades = grades;
 // for (let i = 0; i<student.courses.length;){
 //     student.courses[i] = student.courses[i]+" : "+student.sGrades[i]
 //     i++;
@@ -62,3 +62,11 @@ student.totalCourses = function(){
 student.totalCourses();
 student.addCourse("CPAN6");
 student.totalCourses();
+
+student.gradeAverage = function(){
+    const initialValue = 0;
+    const sum = this.sGrades.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue,);
+    let average = sum/this.sGrades.length;
+    console.log(average);
+}
+student.gradeAverage();
