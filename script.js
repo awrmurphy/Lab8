@@ -5,7 +5,13 @@ let person = {
     courses : ["CPAN1","CPAN2","CPAN3","CPAN4","CPAN5","WRIT1"],
     info : function(){
         console.log(this);
-    }
+    },
+    // addCourse : function(course){
+    //     this.courses.push(course);
+    // },
+    // totalCourses : function(){
+    //     console.log(this.courses.length);
+    // }
 }
 
 console.log(person.fName);
@@ -41,8 +47,18 @@ console.log(student.graduationYear);
 //     student.courses[i] = student.courses[i]+" : "+student.sGrades[i]
 //     i++;
 // }
-// console.log(student.courses);
+// console.log(student.courses); I don't know why I did this
 
 
 let coursesArr = [...student.courses];
 console.log(coursesArr);
+
+student.addCourse = function(course){
+    this.courses.push(course);
+};
+student.totalCourses = function(){
+    console.log(this.courses.length);
+};
+student.totalCourses();
+student.addCourse("CPAN6");
+student.totalCourses();
