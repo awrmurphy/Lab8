@@ -31,3 +31,8 @@ console.log(b);
 
 let student = {...person}
 console.log(student);
+// let student = person; What is the functional difference between these two commands? How is the output any different? 
+
+student.graduationYear = 2026;
+console.log(student.graduationYear);
+
